@@ -5,20 +5,18 @@ on:
 
 jobs:
   build_job:
-    
     runs-on: ubuntu-latest
-
-    steps:
+     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-     - name: build the artifact
-       run:  |
-       sudo apt-get install cowsay -y
-       cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+      - name: build the artifact
+        run:  |
+         sudo apt-get install cowsay -y
+         cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
 
   test_job:
-    
+
     runs-on: ubuntu-latest
     steps:
         - name: test the artifact
