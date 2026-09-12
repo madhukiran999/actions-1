@@ -32,7 +32,7 @@ jobs:
     concurrency:
       group: prod-group
       cancel-in-progress: true
-    timeout_minutes: 1
+    timeout-minutes: 1
 
     steps:
       - name: Download artifact
