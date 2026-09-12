@@ -5,7 +5,7 @@ on:
 
 jobs:
     first_job:
-        if: github.refs=='refs/heads/main'
+        if: github.ref=='refs/heads/main'
         runs-on: ubuntu-latest
         steps:
             - name: checkout
