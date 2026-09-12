@@ -1,9 +1,11 @@
 name: My first workflow
 
-on: push
+on: 
+  push:
 
 jobs:
     first_job:
+        if: github.refs=='refs/heads/main'
         runs-on: ubuntu-latest
         steps:
             - name: checkout
